@@ -62,6 +62,7 @@ public class Task {
     @CreationTimestamp
     private Date createdAt;
 
+
     @Column(name = "updated_at")
     @UpdateTimestamp
     private Date updatedAt;

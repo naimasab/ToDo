@@ -43,7 +43,6 @@ public class TaskController {
     public ResponseEntity<?> updateTask(@RequestBody TaskRequestDto task) {
         try {
             return ResponseEntity.ok(taskService.createTask(task));
-
         } catch (Exception e) {
             return ResponseEntity.badRequest().build();
         }

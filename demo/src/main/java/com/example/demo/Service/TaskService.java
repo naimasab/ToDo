@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface TaskService {
     List<TaskResponseDto> getAllTasks();
+
     TaskResponseDto createTask(TaskRequestDto taskDto);
     TaskResponseDto getTaskById(Long id) throws Exception;
     TaskResponseDto updateTask() throws Exception;

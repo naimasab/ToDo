@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
 @Getter
 @Setter
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @NotNull

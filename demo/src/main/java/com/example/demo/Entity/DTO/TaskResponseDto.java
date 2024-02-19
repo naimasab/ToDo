@@ -15,6 +15,7 @@ import java.util.Date;
 public class TaskResponseDto {
     private Long id;
     private String title;
+
     private String description;
     private Long userId;
     private String status;

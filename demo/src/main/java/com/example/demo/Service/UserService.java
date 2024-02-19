@@ -57,6 +57,7 @@ public class UserService {
         user.setLastName(userDto.getLastName());
         user.setEmail(userDto.getEmail());
         return MappingProfile.mapToUserDto(userRepo.save(user));
+
     }
     public  UserResponseDto deleteUser(Long id)throws Exception{
         var user = userRepo.findById(id).orElseThrow(() -> new Exception("User not found"));

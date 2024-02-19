@@ -12,6 +12,7 @@ import org.modelmapper.spi.MappingContext;
 
 public class MappingProfile {
     private static final ModelMapper modelMapper = new ModelMapper();
+
     public static Task mapToEntity(TaskRequestDto taskDto) {
         return modelMapper.map(taskDto, Task.class);
     }
