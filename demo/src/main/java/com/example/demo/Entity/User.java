@@ -25,7 +25,6 @@ public class User {
     private Long id;
 
     @Column(name = "first_name",nullable = false)
-
     private String firstName;
 
     @Column(name = "last_name",nullable = false)
@@ -34,14 +33,6 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    public boolean isValidEmail(String email) {
-        if (email == null) {
-            return false;
-        }
-
-        String regex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
-        return Pattern.matches(regex, email);
-    }
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Task> tasks = new ArrayList<>();

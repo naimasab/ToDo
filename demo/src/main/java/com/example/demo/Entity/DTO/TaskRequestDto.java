@@ -1,5 +1,6 @@
 package com.example.demo.Entity.DTO;
 
+import com.example.demo.Entity.Status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,6 +19,6 @@ public class TaskRequestDto {
     private String description;
 
     private Long userId;
-    private String status;
+    private Status status;
     private Date dueDate;
 }

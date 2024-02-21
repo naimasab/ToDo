@@ -4,6 +4,6 @@ public enum Status {
     ISDONE,
     IN_PROGRESS,
 
-    NOTDONE
+    NOTDONE,
 }
 
