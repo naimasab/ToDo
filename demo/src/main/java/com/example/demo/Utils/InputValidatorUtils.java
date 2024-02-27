@@ -15,7 +15,7 @@ public class InputValidatorUtils {
     /// ici
 
         public static boolean isValidStatus(Status status) {
-            return status != null && (status == Status.ISDONE || status == Status.IN_PROGRESS || status == Status.NOTDONE);
+            return status.toString().isBlank();
         }
 
 
