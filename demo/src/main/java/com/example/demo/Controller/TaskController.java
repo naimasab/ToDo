@@ -14,7 +14,6 @@ import java.util.List;
 @AllArgsConstructor
 public class TaskController {
     private final TaskService taskService;
-
     // add CRUD methods
     // add ExceptionHandling
     // create custom exceptions NotFoundException, DataNotValidException, etc.
